@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   nginx:
     image: nginx:latest
@@ -7,7 +5,4 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - mydata:/usr/share/nginx/html   # attach named volume
-
-volumes:
-  mydata:
+      - ./html:/usr/share/nginx/html:ro
