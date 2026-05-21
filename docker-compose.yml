@@ -9,4 +9,4 @@ services:
     volumes:
       - ./html:/usr/share/nginx/html:ro
   volumes:
-        nginx_data: 
+        mydata: 
